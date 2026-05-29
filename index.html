@@ -13,43 +13,36 @@
       background-color: #fffafc;
       color: #333;
     }
-
     header {
       background-color: #ffd1dc;
       color: #333;
       padding: 2rem 1rem;
       text-align: center;
     }
-
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
-
     section {
       padding: 2rem 1rem;
       max-width: 800px;
       margin: 0 auto;
     }
-
     img.profile-pic {
       max-width: 200px;
       border-radius: 50%;
       display: block;
       margin: 1rem auto;
     }
-
     a {
       color: #cc3366;
     }
-
     footer {
       background-color: #ffe4ec;
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
     }
-
     .btn {
       display: inline-block;
       background-color: #cc3366;
@@ -59,14 +52,74 @@
       text-decoration: none;
       margin-top: 1rem;
     }
-
     .btn:hover {
       background-color: #b0305c;
+    }
+    .btn-outline {
+      display: inline-block;
+      border: 2px solid #cc3366;
+      color: #cc3366;
+      padding: 0.5rem 1.1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 1rem;
+      margin-left: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .btn-outline:hover {
+      background-color: #ffd1dc;
+    }
+    h2 {
+      border-bottom: 2px solid #ffd1dc;
+      padding-bottom: 0.3rem;
+    }
+    .publication {
+      margin-bottom: 1.4rem;
+      padding-left: 0.8rem;
+      border-left: 3px solid #ffd1dc;
+    }
+    .publication .pub-title {
+      font-weight: bold;
+      color: #222;
+    }
+    .publication .pub-title a {
+      color: #cc3366;
+      text-decoration: none;
+    }
+    .publication .pub-title a:hover {
+      text-decoration: underline;
+    }
+    .publication .pub-authors {
+      font-size: 0.9rem;
+      color: #555;
+      margin: 0.1rem 0;
+    }
+    .publication .pub-venue {
+      font-size: 0.88rem;
+      color: #888;
+      font-style: italic;
+    }
+    .pub-year {
+      font-size: 0.85rem;
+      font-weight: bold;
+      color: #cc3366;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .fun-facts {
+      background-color: #fff0f4;
+      border-radius: 8px;
+      padding: 1rem 1.4rem;
+      margin-top: 1rem;
+    }
+    .fun-facts p {
+      margin: 0;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Ines Aitsahalia</h1>
     <p>PhD Candidate in Neurobiology & Behavior<br>Columbia University</p>
@@ -77,17 +130,77 @@
     <h2>About Me</h2>
     <p>
       I'm a computational neuroscience PhD student at Columbia University working on models of cognition,
-      causal inference, and reinforcement learning in psychiatry. I’m especially interested in how anticipatory
+      causal inference, and reinforcement learning in psychiatry. I'm especially interested in how anticipatory
       value, causal beliefs, and latent structure interact to shape behavior and treatment outcomes.
     </p>
     <p>
-      I’ve conducted research across institutions including Columbia, NYSPI, and Princeton, with work
+      I've conducted research across institutions including Columbia, NYSPI, and Princeton, with work
       spanning delusions, dopamine, learning, and computational psychiatry.
-          </p>
-    <p>
-      I'm very passionate about teaching, having taught and TA'ed several classes at Columbia and Barnard. 
     </p>
-    <a class="btn" href="files/Ines_cv.pdf" >My CV</a>
+    <p>
+      I'm very passionate about teaching, having taught and TA'ed several classes at Columbia and Barnard.
+    </p>
+
+    <div class="fun-facts">
+      <p>🦕 Outside the lab, I'm a museum enthusiast with a particular weakness for dinosaur exhibits. I also minored in theater and try to keep that creative side alive — whether it's on stage or just giving very dramatic chalk talks.</p>
+    </div>
+
+    <a class="btn" href="files/Ines_cv.pdf">My CV</a>
+    <a class="btn-outline" href="https://scholar.google.com/citations?user=3n9ZyX8AAAAJ&hl=en" target="_blank">Google Scholar</a>
+  </section>
+
+  <section id="research">
+    <h2>Selected Publications</h2>
+
+    <div class="pub-year">2026</div>
+
+    <div class="publication">
+      <div class="pub-title">
+        <a href="https://arxiv.org/search/?searchtype=author&query=Aitsahalia" target="_blank">Hierarchical Latent Structure Learning through Online Inference</a>
+      </div>
+      <div class="pub-authors">I. Aitsahalia &amp; K. Iigaya</div>
+      <div class="pub-venue">arXiv, 2026</div>
+    </div>
+
+    <div class="publication">
+      <div class="pub-title">
+        <a href="https://www.biorxiv.org/search/Aitsahalia" target="_blank">Building Goal-Directed Cognitive Graphs</a>
+      </div>
+      <div class="pub-authors">A. Gungi, P. Sepulveda, I. Aitsahalia, M. Blanco-Pozo, K. Iigaya</div>
+      <div class="pub-venue">BioRxiv, 2026</div>
+    </div>
+
+    <div class="pub-year">2025</div>
+
+    <div class="publication">
+      <div class="pub-title">
+        <a href="https://scholar.google.com/citations?user=3n9ZyX8AAAAJ&hl=en" target="_blank">Inferring cognitive strategies from groups of animals in natural environments</a>
+      </div>
+      <div class="pub-authors">I. Aitsahalia, T. Botch, S. Gu, T. O'Connell, R. Seigel, R. Peterson, D. Batenkov, E. Mackevicius</div>
+      <div class="pub-venue">NeurIPS Workshop, 2025</div>
+    </div>
+
+    <div class="pub-year">2024</div>
+
+    <div class="publication">
+      <div class="pub-title">
+        <a href="https://scholar.google.com/citations?user=3n9ZyX8AAAAJ&hl=en" target="_blank">Anticipatory value computation as a new transdiagnostic target</a>
+      </div>
+      <div class="pub-authors">P. Sepulveda, I. Aitsahalia, K. Kumar, T. Atkin, K. Iigaya</div>
+      <div class="pub-venue">Biological Psychiatry, 2024</div>
+    </div>
+
+    <div class="publication">
+      <div class="pub-title">
+        <a href="https://scholar.google.com/citations?user=3n9ZyX8AAAAJ&hl=en" target="_blank">Book Chapter: Computational Psychiatry and Eating Disorders</a>
+      </div>
+      <div class="pub-authors">I. Aitsahalia*, P. Sepulveda*, S. Dong*, K. Iigaya (*co-first authors)</div>
+      <div class="pub-venue">Oxford Handbook on Eating Disorders, 2024</div>
+    </div>
+
+    <p style="margin-top: 1.5rem;">
+      <a href="https://scholar.google.com/citations?user=3n9ZyX8AAAAJ&hl=en" target="_blank">→ View full publication list on Google Scholar</a>
+    </p>
   </section>
 
   <section id="contact">
@@ -95,11 +208,11 @@
     <p>Email: <a href="mailto:ifa2108@cumc.columbia.edu">ifa2108@cumc.columbia.edu</a></p>
     <p>GitHub: <a href="https://github.com/ines-f-as" target="_blank">github.com/ines-f-as</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/ines-aitsahalia-b146ab177/" target="_blank">linkedin.com/in/ines-aitsahalia</a></p>
+    <p>Google Scholar: <a href="https://scholar.google.com/citations?user=3n9ZyX8AAAAJ&hl=en" target="_blank">scholar.google.com</a></p>
   </section>
 
   <footer>
     &copy; 2025 Ines Aitsahalia. Built with 💖 using GitHub Pages.
   </footer>
-
 </body>
 </html>
